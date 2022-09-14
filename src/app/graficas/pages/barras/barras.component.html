@@ -1,0 +1,12 @@
+<h1>Gráficas de barras</h1>
+<hr>
+<div style="display: block">
+    <canvas baseChart
+      [data]="barChartData"
+      [options]="barChartOptions"
+      [type]="barChartType">
+    </canvas>
+  </div>
+  <button
+    (click)="actualizar()"
+    class="btn btn-primary float-end">Update</button>
