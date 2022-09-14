@@ -1,1 +1,15 @@
-<p>dona works!</p>
+<h1>Gráfica de dona</h1>
+<hr>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-9"></div>
+</div>
+<div style="display: block">
+    <canvas baseChart
+            [labels]="doughnutChartLabels"
+            [datasets]="doughnutChartDatasets"
+            [options]="doughnutChartOptions"
+            [legend]="true"
+            [type]="'doughnut'">
+    </canvas>
+</div>
